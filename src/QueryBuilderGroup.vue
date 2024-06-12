@@ -223,6 +223,7 @@ export default class QueryBuilderGroup extends Vue implements QueryBuilderGroupI
     return {
       maxDepthExeeded: this.maxDepthExeeded,
       rules: this.rules,
+      query: this.query,
       addRule: (newRule: string) => {
         const currentRule = this.selectedRule;
         this.selectedRule = newRule;
